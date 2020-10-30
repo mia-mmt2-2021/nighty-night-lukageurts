@@ -1,3 +1,4 @@
+let kleur = 255;
 
 function setup() {
   createCanvas(600, 600);
@@ -5,7 +6,9 @@ function setup() {
 }
 
 function draw() {
-  background(0, 73, 100, 170);
+  kleur = map(mouseX, 0, 600, 0, 255);
+  print(kleur);
+  background(kleur, 0, 73, 100, 170);
 
   //SUN
   fill(255, 180);
